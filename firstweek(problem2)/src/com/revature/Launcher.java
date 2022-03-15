@@ -15,7 +15,7 @@ public class Launcher {
 	}
 	getMax();
 	
-	System.out.println(stack);
+//	System.out.println(stack);
 		
 	}
 	
@@ -30,6 +30,7 @@ public class Launcher {
 			}
 		} else {
 			k = stack.pop();
+			System.out.println(stack);
 		}
 		return k;
 	}
@@ -42,6 +43,7 @@ public class Launcher {
 				stack.push(j);
 			}
 		}
+	System.out.println(stack);
 		
 	
 	}
