@@ -32,17 +32,26 @@ public class Launcher {
 			listB.add(a);
 		}
 		
-		outerloop:
+//		outerloop:
 		for (int i = 0; i<Math.max(m, n); i++) {
 			for (int j = 0; j<Math.min(m, n); j++) {
 				if (listA.get(i) == listB.get(j)) {
 					answer = listA.get(i);
 					System.out.println(answer);
-					break outerloop;
-					
+//					break outerloop;
+					return;
 				}
 			}
 		}
+		
+//		outerloop:
+//		for (int abc : listA) {
+//			if (listB.contains(abc)) {
+//				System.out.println(abc);
+//				break outerloop;
+//				return;
+//			}
+//		}
 		
 		
 	}
